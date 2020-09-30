@@ -17,7 +17,8 @@ namespace PlacesBeen.Models
       Id = _instances.Count;
     }
     public static List<Place> GetAll()
-    {      
+    {
+      Console.WriteLine();
       return _instances;
     }
     public static void ClearAll()
