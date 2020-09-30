@@ -4,6 +4,9 @@ namespace PlacesBeen.Models
 {
   public class Place
   {
+    public Place()
+    {
 
+    }
   }
 }
