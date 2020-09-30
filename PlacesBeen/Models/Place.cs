@@ -9,7 +9,7 @@ namespace PlacesBeen.Models
     // public int Id { get; }
     public Place(string cityName)
     {
-      
+      CityName = cityName;
     }
   }
 }
