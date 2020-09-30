@@ -1,0 +1,24 @@
+@using PlacesBeen.Models;
+@{
+  Layout = "_Layout";
+}
+<h1>Places Been</h1>
+@if (Model.Count == 0)
+{
+  <p>You haven't been anywhere! Get Going!.</p>
+}
+<ul>
+  @foreach (Place place in Model)
+  {
+    <li><a href='/places/@place.Id'>@place.Description</a></li>
+  {
+    <li><a href='/places/@place.Id'>@place.Description</a></li>
+  }
+</ul>
+
+<a href="/places/new">Add a new item.</a>
+
+<form action="/places/delete" method="post">
+  <button type="submit" name="button">Clear All Items</button>
+</form>@using PlacesBeen.Models;ion="/places/delete" method="post">
+  
