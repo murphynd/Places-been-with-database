@@ -25,5 +25,19 @@ namespace PlacesBeen.Tests
       // Assert
       Assert.AreEqual("Amsterdam", result);
     }
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_PlaceList()
+    {
+      // Arrange
+      List<Place> newList = new List<Place> { };
+
+      // Act
+      List<Place> result = Place.GetAll();
+      
+
+      // Assert
+      CollectionAssert.AreEqual(newList, result);
+    }
+
   }
 }
