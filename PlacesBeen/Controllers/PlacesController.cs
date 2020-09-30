@@ -11,18 +11,34 @@ namespace PlacesBeen.Controllers
       public ActionResult Index()
       {
         List<Place> allPlaces = Place.GetAll();
-        return View();
+        return View(allPlaces);
       }
+
       [HttpGet("/places/new")]
       public ActionResult New()
       {
         return View();
       }
+
       [HttpPost("/places")]
-    public ActionResult Create()
-    {
-      Place myPlace = new Place();
-      return RedirectToAction("Index");
-    }
+      public ActionResult Create()
+      {
+        Place myPlace = new Place();
+        return RedirectToAction("Index");
+      }
+
+      [HttpPost("/places/delete")]
+      public ActionResult DeleteAll()
+      {
+        Place.ClearAll();
+        return View();
+      }
+      
+      [HttpGet("/places/{id}")]
+      public ActionResult Show(int id)
+      {
+        Place foundPlace = Place.Find(id);
+        return View(foundPlace);
+      }
     }
 }
