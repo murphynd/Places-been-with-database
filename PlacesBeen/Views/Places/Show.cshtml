@@ -1,5 +1,12 @@
-@* <h1>Place Details: </h1>
+@using PlacesBeen.Models;
+@{
+  Layout = "_Layout";
+}
+
+<h1>Place Details: </h1>
 
 <h2>@Model.CityName</h2>
+<img src="@Model.Image" />
+<p>Description:<br>@Model.Description</p>
 
-<a href='/places/new'>Add another place</a> *@
+<a href='/places/new'>Add another place</a>

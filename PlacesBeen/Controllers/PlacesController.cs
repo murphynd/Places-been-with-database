@@ -21,14 +21,14 @@ namespace PlacesBeen.Controllers
       }
 
       [HttpPost("/places")]
-      public ActionResult Create(string cityName)
+      public ActionResult Create(string cityName, string description, string image)
       {
-        Place myPlace = new Place(cityName);
+        Place myPlace = new Place(cityName, description, image);
         return RedirectToAction("Index");
       }
 
       [HttpPost("/places/delete")]
-      public ActionResult DeleteAll()
+      public ActionResult Delete()
       {
         Place.ClearAll();
         return View();
