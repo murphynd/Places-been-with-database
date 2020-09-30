@@ -2,7 +2,7 @@
 
 #### _C# ASP.NET MCV Project for Epicodus, September 30th, 2020_
 
-#### By _**Mike Manchee**_
+#### By _**Mike Manchee, Ben Stoller, Natalie Murphy, and Garrett D Brown**_
 
 ## Description
 
@@ -18,7 +18,12 @@ At the very least, the front end MVC web application should support RESTful Inde
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-|  1. ... | ... | ... |
+|  1. Places Class, Instantiate a Places class | ... | Places Class |
+|  2. Add Function, Test and Build | Test | Function |
+|  3. Delete Function, Test and Build | Test | Function |
+|  4. HTML Home/Index, Create Landing page | ... | Homepage |
+|  5. HTML Places/Index, Create class pages | ... | Class pages |
+|  6. ... | ... | ... |
 
 ## Setup/Installation Requirements
 
@@ -57,5 +62,5 @@ Main Programs
 
 ### License
 
-Copyright (c) 2020 **_{Mike Manchee}_**
+Copyright (c) 2020 **_{Mike Manchee, Ben Stoller, Natalie Murphy, and Garrett D Brown}_**
 Licensed under MIT
