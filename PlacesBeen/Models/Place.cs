@@ -15,9 +15,12 @@ namespace PlacesBeen.Models
       _instances.Add(this);
     }
     public static List<Place> GetAll()
+    {      
+      return _instances;
+    }
+    public static void ClearAll()
     {
-      List<Place> some = new List<Place>();
-      return some;
+      _instances.Clear();
     }
   }
 }
