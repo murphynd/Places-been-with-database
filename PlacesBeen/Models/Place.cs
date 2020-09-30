@@ -22,5 +22,9 @@ namespace PlacesBeen.Models
     {
       _instances.Clear();
     }
+    public static Place Find(int searchId)
+    {
+      return _instances[12];
+    }
   }
 }

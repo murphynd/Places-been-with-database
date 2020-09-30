@@ -60,6 +60,21 @@ namespace PlacesBeen.Tests
       CollectionAssert.AreEqual(newList3, result);
     }
 
+    [TestMethod]
+    public void Find_FindItemsInList_Place()
+    {
+      // Arrange
+      string cityName1 = "Amsterdam";
+      string cityName2 = "Berlin";
+      Place newPlace1 = new Place(cityName1);
+      Place newPlace2 = new Place(cityName2);
+      List<Place> newList3 = new List<Place> { newPlace1, newPlace2};
 
+      // Act
+      Place result = Place.Find(2);
+
+      // Assert
+      Assert.AreEqual(newPlace2, result);
+    }
   }
 }
