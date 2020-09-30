@@ -1,14 +1,14 @@
-@using Place.Models;
+@using PlacesBeen.Models;
 
-<h1>Places Been</h1>
+<h1>Places you've been</h1>
 @if (Model.Count == 0)
 {
-  <p>You haven't been anywhere!</p>
+  <p>You haven't been ANYWHERE! Get outta here. </p>
 }
 <ul>
   @foreach (Place place in Model)
   {
-    <li><a href='/places/@place.Id'>@place.cityName</a></li>
+    <li><a href='/places/@place.Id'>@place.CityName</a></li>
   }
 </ul>
 
