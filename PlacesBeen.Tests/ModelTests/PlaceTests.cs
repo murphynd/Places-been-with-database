@@ -106,7 +106,7 @@ namespace PlacesBeen.Tests
     }
 
     [TestMethod]
-    public void Find_FindItemsInList_Place()
+    public void Find_FindPlacesInList_Place()
     {
       // Arrange
       string cityName1 = "Amsterdam";
@@ -117,10 +117,11 @@ namespace PlacesBeen.Tests
       newPlace2.Save();
 
       // Act
-      Place result = Place.Find(2);
+      Place foundPlace = Place.Find(newPlace1.Id);
+
 
       // Assert
-      Assert.AreEqual(newPlace2, result);
+      Assert.AreEqual(newPlace1, foundPlace);
     }
   }
 }

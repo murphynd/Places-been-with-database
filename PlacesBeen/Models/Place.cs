@@ -114,6 +114,7 @@ namespace PlacesBeen.Models
       }
       Place foundPlace = new Place(placeCityName, placeDescription, placeImage, placeId);
 
+
       // We close the connection.
       conn.Close();
       if (conn != null)
