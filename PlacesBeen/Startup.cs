@@ -22,7 +22,6 @@ namespace PlacesBeen
     {
       services.AddMvc();
     }
-
     public void Configure(IApplicationBuilder app)
     {
       app.UseDeveloperExceptionPage();
@@ -39,9 +38,9 @@ namespace PlacesBeen
         await context.Response.WriteAsync("Something went wrong!");
       });
     }
-    public static class DBConfiguration
-    {
-      public static string ConnectionString = "server=localhost;user id=root;password=epicodus;port=3306;database=to_do_list;";
-    }
+  }
+  public static class DBConfiguration
+  {
+    public static string ConnectionString = "server=localhost;user id=root;password=epicodus;port=3306;database=places;";
   }
 }
